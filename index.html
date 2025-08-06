@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Study Planner & Pomodoro App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-img"></div>
+
+  <div class="box">
+    <h1>Study Planner & Pomodoro App</h1>
+
+    <div class="input-part">
+      <input type="text" id="taskinput" placeholder="Enter your task..">
+      <button onclick="add()">add</button>
+    </div>
+
+    <div class="task-area">
+      <div class="task-col" id="pending">
+        <h2>PENDING</h2>
+      </div>
+      <div class="task-col" id="progress">
+        <h2>IN PROGRESS..</h2>
+      </div>
+      <div class="task-col" id="done">
+        <h2>COMPLETED</h2>
+      </div>
+    </div>
+
+    <div class="time-part">
+      <h2>timer</h2>
+      <div id="time">25:00</div>
+      <div class="btns">
+        <button onclick="start()">start</button>
+        <button onclick="pause()">pause</button>
+        <button onclick="reset()">reset</button>
+      </div>
+    </div>
+
+    <div class="music-part">
+      <h2>music</h2>
+      <audio id="music" src="https://soundcloud.com/relaxdaily/explore?in=relaxdaily/sets/deep-focus-music-studying-concentration-work&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" loop></audio>
+      <button onclick="toggleMusic()">play/pause</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
